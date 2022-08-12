@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import './style.css';
 import printMe from './print.js';
 
 function component() {
@@ -12,6 +13,7 @@ function component() {
     btn.onclick = printMe;
     
     element.appendChild(btn);
+    element.classList.add('hello');
   
     return element;
   }
